@@ -41,7 +41,7 @@ The number of elementary steps is `~n*(n-1)`, because end = `n-1`.
   ```
 
 Algorithm complexity is `O(n * m)`.
-The number of elementary steps is ~n*m, because all first column values may be even number.
+The number of elementary steps is `~n * m`, because all first column values may be even number.
 
 3. (*) What is the expected running time of the following C# code?
   - Explain why using Markdown.
