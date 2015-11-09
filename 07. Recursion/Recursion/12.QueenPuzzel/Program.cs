@@ -4,68 +4,76 @@
 
     public class Program
     {
-        static bool[] arrA = new bool[8];
-        static bool[] arrB = new bool[15];
-        static bool[] arrC = new bool[15];
-        static int[] arrX = new int[8];
-        static bool q = true;
-
         public static void Main()
         {
-            for (int i = 1; i <= 8; i++)
+            EightQueen queen = new EightQueen(8);
+            queen.GetSolution(0);
+        }
+    }
+    public class EightQueen
+    {
+        private int[] queenColumnPositions;
+        private int count = 0;
+        public int Size { get; set; }
+
+        public EightQueen(int size)
+        {
+            this.Size = size;
+            this.queenColumnPositions = new int[size];
+        }
+        public void GetSolution(int currentQueenColumn)
+        {
+            if (currentQueenColumn == this.Size)
             {
-                arrA[i] = true;
+                PrintBoard();
+                return;
             }
 
-            for (int i = 2; i <= 16; i++)
+            for (int i = 0; i < this.Size; i++)
             {
-                arrB[i] = true;
+                if (IsValidPosition(i, currentQueenColumn))
+                {
+                    this.queenColumnPositions[currentQueenColumn] = i;
+                    GetSolution(currentQueenColumn + 1);
+                }
             }
-
-            for (int i = -7; i <= 7; i++)
-            {
-                arrC[i] = true;
-            }
-
-            FindQueensSolution(1, q);
-
         }
 
-        private static void FindQueensSolution(int i, bool q)
+        private bool IsValidPosition(int i, int currentQueenColumn)
         {
-            int j = 0;
-
-            do
+            for (int j = 0; j < currentQueenColumn; j++)
             {
-                j += 1;
-                q = false;
-                if (arrA[j] && arrB[i + j] && arrC[i - j])
+                // column
+                if (this.queenColumnPositions[j] == i)
                 {
-                    arrX[i] = j;
-                    arrA[j] = false;
-                    arrB[i + j] = false;
-                    arrC[i - j] = false;
-                    if (i < 8)
-                    {
-                        FindQueensSolution(i + 1, q);
-                        if (!q)
-                        {
-                            arrA[j] = true;
-                            arrB[i + j] = true;
-                            arrC[i - j] = true;
-                        }
-                    }
-                    else
-                    {
-                        q = true;
-                        for (int m = 0; m < 8; m++)
-                        {
-                            Console.Write(arrX[i]);
-                        }
-                        Console.WriteLine();
-                    }
+                    return false;
                 }
-            } while (!q || j != 8);
+
+                // diagonals
+                if (Math.Abs(queenColumnPositions[j] - i)
+                    == Math.Abs(j - currentQueenColumn))
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        private void PrintBoard()
+        {
+            count++;
+            Console.WriteLine(count);
+            foreach (int item in this.queenColumnPositions)
+            {
+                for (int j = 0; j < this.Size; j++)
+                {
+                    if (j == item)
+                        Console.Write("Q ");
+                    else
+                        Console.Write("* ");
+                }
+                Console.WriteLine();
+            }
         }
     }
 }
