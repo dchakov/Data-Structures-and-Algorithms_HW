@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24606.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.BinaryPasswords", "01.BinaryPasswords\01.BinaryPasswords.csproj", "{45888861-FDB8-4508-9FA7-9FE2F11280EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.BinaryPasswordCount", "01.BinaryPasswordCount\01.BinaryPasswordCount.csproj", "{3DC228EA-9849-4F5D-B906-82306247104A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.ColorBunnies", "02.ColorBunnies\02.ColorBunnies.csproj", "{52623654-B059-40E4-A170-9DA02B2E8D76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.Dividers", "03.Dividers\03.Dividers.csproj", "{1D5EC0EB-DC5E-4B20-8F5C-33D28C547E39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.Balls", "04.Balls\04.Balls.csproj", "{529EFA01-89F0-45C1-9950-4E57A2ACF841}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.BallsReqursion", "04.BallsReqursion\04.BallsReqursion.csproj", "{69CFD6D9-D2FB-4E04-AD54-67F33CD646B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45888861-FDB8-4508-9FA7-9FE2F11280EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45888861-FDB8-4508-9FA7-9FE2F11280EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45888861-FDB8-4508-9FA7-9FE2F11280EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45888861-FDB8-4508-9FA7-9FE2F11280EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DC228EA-9849-4F5D-B906-82306247104A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DC228EA-9849-4F5D-B906-82306247104A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DC228EA-9849-4F5D-B906-82306247104A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DC228EA-9849-4F5D-B906-82306247104A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52623654-B059-40E4-A170-9DA02B2E8D76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52623654-B059-40E4-A170-9DA02B2E8D76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52623654-B059-40E4-A170-9DA02B2E8D76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52623654-B059-40E4-A170-9DA02B2E8D76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D5EC0EB-DC5E-4B20-8F5C-33D28C547E39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D5EC0EB-DC5E-4B20-8F5C-33D28C547E39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D5EC0EB-DC5E-4B20-8F5C-33D28C547E39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D5EC0EB-DC5E-4B20-8F5C-33D28C547E39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{529EFA01-89F0-45C1-9950-4E57A2ACF841}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{529EFA01-89F0-45C1-9950-4E57A2ACF841}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{529EFA01-89F0-45C1-9950-4E57A2ACF841}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{529EFA01-89F0-45C1-9950-4E57A2ACF841}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69CFD6D9-D2FB-4E04-AD54-67F33CD646B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69CFD6D9-D2FB-4E04-AD54-67F33CD646B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69CFD6D9-D2FB-4E04-AD54-67F33CD646B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69CFD6D9-D2FB-4E04-AD54-67F33CD646B4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
